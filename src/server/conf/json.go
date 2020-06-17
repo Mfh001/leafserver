@@ -24,10 +24,23 @@ var Server struct {
 	RedisMaxIdle int
 	RedisMaxActive int
 	RedisIdleTimeout time.Duration
+
+	//mysql
+	MysqlType string
+	MysqlHost string
+	MysqlUser string
+	MysqlPassword string
+	MysqlName string
+	MysqlTablePrefix string
+	MysqlMaxIdle int
+	MysqlMaxOpen int
 }
 
 func init() {
 	data, err := ioutil.ReadFile("conf/server.json")
+	if data == nil {
+		data, err = ioutil.ReadFile("../conf/server.json")
+	}
 	if err != nil {
 		log.Fatal("%v", err)
 	}

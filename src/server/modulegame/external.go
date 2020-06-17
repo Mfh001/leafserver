@@ -1,7 +1,7 @@
-package game
+package modulegame
 
 import (
-	"server/game/internal"
+	"server/modulegame/internal"
 )
 
 var (

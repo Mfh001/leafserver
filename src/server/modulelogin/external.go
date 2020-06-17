@@ -1,7 +1,7 @@
-package login
+package modulelogin
 
 import (
-	"server/login/internal"
+	"server/modulelogin/internal"
 )
 
 var (

@@ -3,12 +3,13 @@ package main
 import (
 	"github.com/name5566/leaf"
 	lconf "github.com/name5566/leaf/conf"
-	"github.com/name5566/leaf/log"
 	"server/conf"
-	"server/game"
-	"server/gate"
-	"server/login"
-	"server/redigo"
+	"server/dbmysql"
+	"server/dbredigo"
+	"server/models"
+	"server/modulegame"
+	"server/modulegate"
+	"server/modulelogin"
 )
 
 func main() {
@@ -18,13 +19,14 @@ func main() {
 	lconf.ConsolePort = conf.Server.ConsolePort
 	lconf.ProfilePath = conf.Server.ProfilePath
 
-	if err := redigo.Setup(); err == nil {
-		log.Release("create redis pool")
-	}
+	//start
+	dbredigo.Start()
+	dbmysql.Start()
+	models.CreateTable()
 
 	leaf.Run(
-		game.Module,
-		gate.Module,
-		login.Module,
+		modulegame.Module,
+		modulegate.Module,
+		modulelogin.Module,
 	)
 }

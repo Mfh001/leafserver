@@ -3,9 +3,17 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/davecgh/go-spew" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/denisenkom/go-mssqldb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/erikstmartin/go-testdb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/go-sql-driver/mysql" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/golang/protobuf" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/gomodule/redigo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/gorilla/websocket" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/jinzhu/gorm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/jinzhu/inflection" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/jinzhu/now" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/lib/pq" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/mattn/go-sqlite3" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/name5566/leaf" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/pmezard/go-difflib" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/stretchr/testify" vcs="Git" />

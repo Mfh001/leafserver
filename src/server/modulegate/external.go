@@ -1,7 +1,7 @@
-package gate
+package modulegate
 
 import (
-	"server/gate/internal"
+	"server/modulegate/internal"
 )
 
 var (

@@ -1,6 +1,6 @@
 {
 	"LogLevel": "debug",
-	"LogPath": "./log",
+	"LogPath": "",
 	"TCPAddr": "127.0.0.1:3563",
 	"WSAddr": "127.0.0.1:3564",
 	"MaxConnNum": 20000,
@@ -9,5 +9,14 @@
 	"RedisPassword" : "",
 	"RedisMaxIdle" : 40,
 	"RedisMaxActive" : 40,
-	"RedisIdleTimeout" : 10000000
+	"RedisIdleTimeout" : 10000000,
+
+	"MysqlType" : "mysql",
+	"MysqlHost" : "127.0.0.1:3306",
+	"MysqlUser" : "root",
+	"MysqlPassword" : "123456",
+	"MysqlName" : "xx",
+	"MysqlTablePrefix" : "",
+	"MysqlMaxIdle" : 40,
+	"MysqlMaxOpen" : 100
 }
