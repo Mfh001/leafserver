@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"github.com/name5566/leaf/log"
 	"io/ioutil"
+	"time"
 )
 
 var Server struct {
@@ -16,6 +17,13 @@ var Server struct {
 	MaxConnNum  int
 	ConsolePort int
 	ProfilePath string
+
+	//redis
+	RedisHost string
+	RedisPassword string
+	RedisMaxIdle int
+	RedisMaxActive int
+	RedisIdleTimeout time.Duration
 }
 
 func init() {

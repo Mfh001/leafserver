@@ -1,2 +1,9 @@
 
 *.exe
+src/github.com/davecgh/go-spew/
+src/github.com/gomodule/redigo/
+src/github.com/pmezard/go-difflib/
+src/github.com/stretchr/testify/
+src/gopkg.in/yaml.v3/
+src/server/go_build_main_go.exe
+src/server/go_build_main_go.exe
