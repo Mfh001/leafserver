@@ -1,7 +1,13 @@
 {
 	"LogLevel": "debug",
-	"LogPath": "",
+	"LogPath": "./log",
 	"TCPAddr": "127.0.0.1:3563",
 	"WSAddr": "127.0.0.1:3564",
-	"MaxConnNum": 20000
+	"MaxConnNum": 20000,
+
+	"RedisHost" : "127.0.0.1:6379",
+	"RedisPassword" : "",
+	"RedisMaxIdle" : 40,
+	"RedisMaxActive" : 40,
+	"RedisIdleTimeout" : 30
 }
